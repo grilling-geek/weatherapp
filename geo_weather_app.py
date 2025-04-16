@@ -46,8 +46,8 @@ def run_ui():
         weather = get_weather(location["lat"], location["lon"])
         if weather:
             full_name = f"{location['name']}, {location['state']}, {location['country']}".strip(', ')
-            result_text.set(f"Location: {full_name}\\n"
-                            f"Temperature: {weather['temp']}°F\\n"
+            result_text.set(f"Location: {full_name}\n"
+                            f"Temperature: {weather['temp']}°F\n"
                             f"Min Temperature: {weather['min_temp']}°F\n"
                             f"Max Temperature: {weather['max_temp']}°F\n"
                             f"Humidity: {weather['humidity']}%\n"
