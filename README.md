@@ -39,7 +39,10 @@ Usage
 3. Click the 'Get Weather' button
 4. The weather information will be displayed below, showing:
    - City and country
-   - Current temperature in Celsius
+   - Current temperature in Fahrenheit
+   - Minimum temperature in Fahrenheit
+   - Maximum temperature in Fahrenheit
+   - Humidity percentage
    - Weather condition (e.g. Clear sky, Rain)
 
 Troubleshooting
