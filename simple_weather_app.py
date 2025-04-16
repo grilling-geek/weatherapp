@@ -16,6 +16,7 @@ def get_weather_by_city(city_query):
             "temp": data["main"]["temp"],
             "min_temp": data["main"]["temp_min"],
             "max_temp": data["main"]["temp_max"],
+            "humidity": data["main"]["humidity"],
             "desc": data["weather"][0]["description"]
         }
     else:
@@ -31,6 +32,7 @@ def run_ui():
                             f"Temperature: {weather['temp']}°F\n"
                             f"Min Temperature: {weather['min_temp']}°F\n"
                             f"Max Temperature: {weather['max_temp']}°F\n"
+                            f"Humidity: {weather['humidity']}%\n"
                             f"Condition: {weather['desc'].title()}")
         else:
             result_text.set("City not found or API error.")
